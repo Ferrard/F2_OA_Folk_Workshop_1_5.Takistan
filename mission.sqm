@@ -36,7 +36,8 @@ class Mission
 		"caweapons_e_ammoboxes",
 		"camisc_e",
 		"cawheeled_e_brdm2",
-		"CAWheeled2_Kamaz"
+		"CAWheeled2_Kamaz",
+		"CAWheeled_E"
 	};
 	addOnsAuto[]=
 	{
@@ -56,6 +57,7 @@ class Mission
 		"caweapons_e_ammoboxes",
 		"camisc_e",
 		"CAWheeled2_Kamaz",
+		"CAWheeled_E",
 		"takistan"
 	};
 	randomSeed=3165154;
@@ -270,7 +272,7 @@ class Mission
 				class Item0
 				{
 					position[]={6061.979,83.040001,11695.428};
-					azimut=43.88744;
+					azimut=43.887402;
 					id=10;
 					side="WEST";
 					vehicle="US_Soldier_TL_EP1";
@@ -1600,7 +1602,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=164;
+		items=174;
 		class Item0
 		{
 			position[]={6057.0928,83.040001,11686.292};
@@ -3203,10 +3205,100 @@ class Mission
 			skill=0.60000002;
 			text="truck";
 		};
+		class Item164
+		{
+			position[]={6216.1343,82.947594,11584.455};
+			azimut=280;
+			id=252;
+			side="EMPTY";
+			vehicle="UAZ_Unarmed_UN_EP1";
+			skill=0.60000002;
+		};
+		class Item165
+		{
+			position[]={6222.4316,82.919601,11589.745};
+			azimut=280;
+			id=253;
+			side="EMPTY";
+			vehicle="UAZ_Unarmed_UN_EP1";
+			skill=0.60000002;
+		};
+		class Item166
+		{
+			position[]={6228.7285,82.908813,11595.034};
+			azimut=280;
+			id=254;
+			side="EMPTY";
+			vehicle="UAZ_Unarmed_UN_EP1";
+			skill=0.60000002;
+		};
+		class Item167
+		{
+			position[]={6235.2773,82.905273,11600.324};
+			azimut=280;
+			id=255;
+			side="EMPTY";
+			vehicle="UAZ_Unarmed_UN_EP1";
+			skill=0.60000002;
+		};
+		class Item168
+		{
+			position[]={6242.3301,82.904968,11605.613};
+			azimut=280;
+			id=256;
+			side="EMPTY";
+			vehicle="UAZ_Unarmed_UN_EP1";
+			skill=0.60000002;
+		};
+		class Item169
+		{
+			position[]={6248.8794,82.877258,11610.147};
+			azimut=280;
+			id=257;
+			side="EMPTY";
+			vehicle="UAZ_Unarmed_UN_EP1";
+			skill=0.60000002;
+		};
+		class Item170
+		{
+			position[]={6255.9316,82.87989,11616.192};
+			azimut=280;
+			id=258;
+			side="EMPTY";
+			vehicle="UAZ_Unarmed_UN_EP1";
+			skill=0.60000002;
+		};
+		class Item171
+		{
+			position[]={6263.2368,82.796936,11621.229};
+			azimut=280;
+			id=259;
+			side="EMPTY";
+			vehicle="UAZ_Unarmed_UN_EP1";
+			skill=0.60000002;
+		};
+		class Item172
+		{
+			position[]={6271.0454,82.671692,11626.771};
+			azimut=280;
+			id=260;
+			side="EMPTY";
+			vehicle="UAZ_Unarmed_UN_EP1";
+			skill=0.60000002;
+		};
+		class Item173
+		{
+			position[]={6209.585,82.975281,11579.165};
+			azimut=280;
+			id=261;
+			side="EMPTY";
+			vehicle="UAZ_Unarmed_UN_EP1";
+			skill=0.60000002;
+		};
 	};
 	class Markers
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			position[]={6131.5791,83.040001,11722.768};
@@ -3262,10 +3354,16 @@ class Mission
 			text="Da Truck";
 			type="hd_flag";
 		};
+		class Item7
+		{
+			position[]={6240.8032,83.040001,11625.52};
+			name="respawn_west";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			position[]={6078.8975,84.786568,11919.824};
@@ -3303,6 +3401,19 @@ class Mission
 			interruptable=1;
 			type="EAST G";
 			age="UNKNOWN";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={6242.3296,82.723984,11600.827};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="player in thislist";
+			expActiv="hint ""It looks like you died. If necessary, grab a UAZ to rejoin your unit."";";
 			class Effects
 			{
 			};
